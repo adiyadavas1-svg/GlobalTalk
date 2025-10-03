@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GlobalTalk</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Welcome to <span class="brand">GlobalTalk</span></h1>
+      <p>This is our first page served by Node.js, now with <strong>CSS &amp; JS</strong>.</p>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <button id="tryBtn" class="btn">Try me</button>
+        <button id="timeBtn" class="btn">Get Server Time</button>
+      </div>
+
+      <div class="row input-row">
+        <input id="nameInput" class="input" placeholder="Type your name" />
+        <button id="helloBtn" class="btn">Say Hello</button>
+      </div>
+
+      <p id="timeText" class="text"></p>
+      <p id="helloText" class="text"></p>
+    </section>
+
+    <p class="next">Next we'll move this project to Express.js for routes & APIs.</p>
+  </main>
+</body>
+</html>
