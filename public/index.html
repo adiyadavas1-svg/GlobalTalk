@@ -9,29 +9,70 @@
 <body>
   <div class="container">
     <h1>Welcome to <span class="brand">GlobalTalk</span></h1>
-    <p class="subtitle">This is our first page served by Node.js, now with CSS & JS.</p>
+    <p class="subtitle">Demo app with multiple APIs & simple storage.</p>
 
     <div class="card">
+      <h2>Quick Actions</h2>
       <div class="row">
-        <button id="btnTry" class="btn">Try me</button>
         <button id="btnTime" class="btn">Get Server Time</button>
         <button id="btnJoke" class="btn">Get Joke</button>
+        <button id="btnQuote" class="btn">Get Quote</button>
+        <button id="btnCounter" class="btn">Visit Counter</button>
+        <button id="btnAvatar" class="btn">Random Avatar</button>
       </div>
+      <div class="row">
+        <input id="cityInput" class="input" placeholder="City for Weather" />
+        <button id="btnWeather" class="btn">Get Weather</button>
+      </div>
+      <p id="timeText"></p>
+      <p id="jokeText"></p>
+      <p id="quoteText"></p>
+      <p id="counterText"></p>
+      <img id="avatarImg" style="border-radius:50%;margin-top:10px;display:none;" />
+      <p id="weatherText"></p>
+    </div>
 
+    <div class="card">
+      <h2>Hello & Reverse & Sum & Translate</h2>
       <div class="row">
         <input id="nameInput" class="input" placeholder="Type your name" />
         <button id="btnHello" class="btn">Say Hello</button>
       </div>
+      <p id="helloText"></p>
 
-      <p id="timeText" class="info"></p>
-      <p id="helloText" class="success"></p>
-      <p id="jokeText" class="muted"></p>
-      <p id="errorText" class="error"></p>
+      <div class="row">
+        <input id="reverseInput" class="input" placeholder="Text to reverse" />
+        <button id="btnReverse" class="btn">Reverse Text</button>
+      </div>
+      <p id="reverseText"></p>
+
+      <div class="row">
+        <input id="sumA" class="input small" placeholder="a (number)" />
+        <input id="sumB" class="input small" placeholder="b (number)" />
+        <button id="btnSum" class="btn">Sum a + b</button>
+      </div>
+      <p id="sumText"></p>
+
+      <div class="row">
+        <input id="trInput" class="input" placeholder="Text to translate" />
+        <button id="btnTranslate" class="btn">Translate (Uppercase)</button>
+      </div>
+      <p id="trText"></p>
     </div>
 
-    <p class="next">Next we’ll move this project to Express.js for routes & APIs.</p>
+    <div class="card">
+      <h2>Feedback (saved to file)</h2>
+      <div class="row">
+        <input id="fbName" class="input" placeholder="Your name (optional)" />
+      </div>
+      <div class="row">
+        <input id="fbMsg" class="input" placeholder="Your message" />
+        <button id="btnFeedback" class="btn">Submit</button>
+      </div>
+      <p id="fbStatus"></p>
+      <div id="fbList" class="list"></div>
+    </div>
   </div>
-
   <script src="./script.js"></script>
 </body>
 </html>
