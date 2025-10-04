@@ -4,32 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GlobalTalk</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <h1>Welcome to <span class="brand">GlobalTalk</span></h1>
-      <p>This is our first page served by Node.js, now with <strong>CSS &amp; JS</strong>.</p>
-    </header>
+  <div class="container">
+    <h1>Welcome to <span class="brand">GlobalTalk</span></h1>
+    <p class="subtitle">This is our first page served by Node.js, now with CSS & JS.</p>
 
-    <section class="card">
+    <div class="card">
       <div class="row">
-        <button id="tryBtn" class="btn">Try me</button>
-        <button id="timeBtn" class="btn">Get Server Time</button>
+        <button id="btnTry" class="btn">Try me</button>
+        <button id="btnTime" class="btn">Get Server Time</button>
+        <button id="btnJoke" class="btn">Get Joke</button>
       </div>
 
-      <div class="row input-row">
+      <div class="row">
         <input id="nameInput" class="input" placeholder="Type your name" />
-        <button id="helloBtn" class="btn">Say Hello</button>
+        <button id="btnHello" class="btn">Say Hello</button>
       </div>
 
-      <p id="timeText" class="text"></p>
-      <p id="helloText" class="text"></p>
-    </section>
+      <p id="timeText" class="info"></p>
+      <p id="helloText" class="success"></p>
+      <p id="jokeText" class="muted"></p>
+      <p id="errorText" class="error"></p>
+    </div>
 
-    <p class="next">Next we'll move this project to Express.js for routes & APIs.</p>
-  </main>
+    <p class="next">Next we’ll move this project to Express.js for routes & APIs.</p>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
